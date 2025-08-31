@@ -5,7 +5,7 @@ def SumOfMultiples(n):
     lista = []
     # variavel que irá ser retornada após a soma dos numeros
     soma = 0
-    # percorre de 1 até o n
+    # percorre de 1 até o n (+1 para nao ignorar ele mesmo) 
     for i in range(1, n+1):
         # se for divisivel por 3, 5 ou 7 adiciona na lista
         if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
