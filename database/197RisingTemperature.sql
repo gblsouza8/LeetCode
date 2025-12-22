@@ -1,0 +1,1 @@
+SELECT  hoje.id from weather hoje join weather ontem where datediff(hoje.recordDate, ontem.recordDate) = 1 and hoje.temperature > ontem.temperature;
