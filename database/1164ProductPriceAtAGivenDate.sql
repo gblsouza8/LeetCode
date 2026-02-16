@@ -1,0 +1,1 @@
+select distinct P1.product_id, IFNULL(P2.new_price, 10) as price from products P1 left join products P2 on P2.change_date = (select max(change_date) from products where product_id = p1.product_id and change_date <= '2019-08-16') and P1.product_id = P2.product_id;
