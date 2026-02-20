@@ -1,0 +1,1 @@
+select U.user_id as buyer_id, U.join_date as join_date, sum(case when O.buyer_id = U.user_id and O.order_date between '2019-01-01' and '2019-12-31' then 1 else 0 end) as orders_in_2019 from Users U join Orders O group by U.user_id, U.join_date order by buyer_id
