@@ -1,0 +1,33 @@
+def generateTheString(n):
+
+
+    # string que será retornada
+    string = ""
+
+    # se n for par, adiciona x n-1 vezes e depois adiciona um y
+    if n % 2 == 0:
+        for i in range(n-1):
+            string += "x"
+        string += "y"
+
+    # se for impar, adiciona x todas as n vezes
+    else:
+        for i in range(n):
+            string += "x"
+
+    
+    return string
+
+
+
+
+
+
+
+
+
+
+
+
+n = 7
+print(generateTheString(n))
